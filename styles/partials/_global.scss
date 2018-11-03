@@ -1,0 +1,80 @@
+// COLOR DECLARATION
+$primary-color: #2c2c2c;
+$white-shade: #f0efed;
+$blue-shade:#285e64;
+$button-accent: #04afc1;
+$red-shade: #a82706;
+$orange-shade: #f6a823;
+$grey-shade: #4f4f4f;
+
+
+// FONT STACK
+$primary__font: 'Roboto', sans-serif;
+$secondary__font: 'Lora', serif;
+
+// MIXINS  
+@mixin heading ($fontSize) {
+    font-size: $fontSize;
+    font-family: $primary__font;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+// GLOBAL STYLES
+html, body{
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+//h2 
+.section-header {
+    @include heading(4.2rem);
+}
+
+//h3
+
+//p
+
+.content {
+    font-family: $primary__font;
+    color: $primary-color;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 25px 0;
+}
+
+//button
+.btn {
+    background: $button-accent;
+    font-family: $primary__font;
+    color: $primary-color;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+
+

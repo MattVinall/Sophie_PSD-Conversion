@@ -1,0 +1,47 @@
+//NAV
+
+.nav {
+    height: 10vh;
+    background: $orange-shade;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    &__item--title {
+        font-size: 4.2rem;
+        font-family: $secondary__font;
+        padding: 0 35px;
+    }
+    &__link {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        --active {
+            color: #fff;
+        }
+    }
+}
+
+.header {
+    height: 50vh;
+    background: $orange-shade;
+    margin: 0;
+    border: 3px solid dodgerblue;
+    &__header-content {
+        display: flex;
+        align-items: center;
+    }
+    &__main-heading {
+        margin: 0;
+        font-size: 9.2rem;
+        font-family: $secondary__font;
+    }
+    &__circle-text {
+        position: relative;
+     }
+}
