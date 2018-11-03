@@ -1,7 +1,5 @@
 //NAV
-
 .nav {
-    height: 10vh;
     background: $orange-shade;
     margin: 0;
     list-style: none;
@@ -13,6 +11,7 @@
         font-size: 4.2rem;
         font-family: $secondary__font;
         padding: 0 35px;
+        text-transform: uppercase; 
     }
     &__link {
         text-decoration: none;
@@ -21,25 +20,35 @@
         color: $primary-color;
         text-transform: uppercase;
         font-weight: 700;
-        --active {
+        &:hover {
+            background:lighten($white-shade, 10); 
+            color: $primary-color;
+            transition: background 400ms ease-in-out;
+            border-radius: 10px;
+        }
+        &--active {
             color: #fff;
         }
     }
 }
 
 .header {
-    height: 50vh;
     background: $orange-shade;
     margin: 0;
-    border: 3px solid dodgerblue;
     &__header-content {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     &__main-heading {
         margin: 0;
         font-size: 9.2rem;
         font-family: $secondary__font;
+    }
+    &__image {
+        box-shadow: 15px 15px #fff;
+        position: relative;
+        top: 50px;
     }
     &__circle-text {
         position: relative;

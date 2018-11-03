@@ -37,35 +37,6 @@ html, body{
     display: block;
 }
 
-//h2 
-.section-header {
-    @include heading(4.2rem);
-}
-
-//h3
-
-//p
-
-.content {
-    font-family: $primary__font;
-    color: $primary-color;
-    font-size: 20px;
-    line-height: 32px;
-    margin: 25px 0;
-}
-
-//button
-.btn {
-    background: $button-accent;
-    font-family: $primary__font;
-    color: $primary-color;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
 
 
 
