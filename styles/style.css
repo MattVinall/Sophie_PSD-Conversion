@@ -208,21 +208,24 @@ html, body {
   .header__main-heading {
     margin: 0;
     font-size: 9.2rem;
-    font-family: "Lora", serif; }
+    font-family: "Lora", serif;
+    text-transform: uppercase; }
   .header__image {
     -webkit-box-shadow: 15px 15px #fff;
     box-shadow: 15px 15px #fff;
     position: relative;
     top: 50px; }
-  .header__circle-text {
-    position: relative; }
+    .header__image__circle-text {
+      position: relative;
+      left: 100px;
+      bottom: 25px; }
 
 .about {
   background: #fff; }
   .about--grey {
     background: #f0efed; }
   .about__container {
-    width: 75%;
+    width: 80%;
     padding: 100px 0 200px 0; }
   .about__content {
     font-family: "Roboto", sans-serif;
@@ -295,9 +298,69 @@ html, body {
   .about__travel-image-container {
     width: 50%; }
   .about__travel-image {
-    -webkit-box-shadow: 200px 20px #f6a823, 40px 40px #f6a823;
-    box-shadow: 200px 20px #f6a823, 40px 40px #f6a823;
+    -webkit-box-shadow: 200px 20px #f6a823, 20px 20px #f6a823;
+    box-shadow: 200px 20px #f6a823, 20px 20px #f6a823;
     position: relative; }
   .about__travel {
     margin-right: 10%;
     text-align: right; }
+
+.links {
+  background: #f0efed;
+  padding: 100px 0; }
+  .links__content {
+    margin-left: 50px;
+    width: 80%; }
+  .links__text {
+    font-size: 2rem;
+    line-height: 32px;
+    margin-left: 25px; }
+  .links__sm-header {
+    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0; }
+  .links__icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f6a823;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #2c2c2c;
+    padding: 15px 0 0 15px; }
+  .links__sm-header {
+    font-size: 2.4rem;
+    padding-top: 10px;
+    margin-left: 25px; }
+  .links__top-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+  .links__bottom-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .links__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .links__contact {
+    margin-left: 20px; }
+
+.footer {
+  background: #2c2c2c; }
+  .footer__text {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 25px 0;
+    margin: 0; }

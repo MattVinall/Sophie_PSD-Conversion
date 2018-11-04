@@ -1,0 +1,46 @@
+.links {
+    background: $white-shade;
+    padding:100px 0;
+    &__content {
+        margin-left: 50px;
+        width: 80%;
+    }
+    &__text {
+        font-size: 2rem;
+        line-height: 32px;
+        margin-left: 25px;
+    }
+    &__sm-header {
+        @include heading (2.4rem);
+    }
+     
+    &__icon {
+        width: 50px;
+        height: 50px;
+        background-color: $orange-shade;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: $primary-color;
+        padding: 15px 0 0 15px;
+    }
+    &__sm-header {
+        font-size: 2.4rem;
+        padding-top: 10px;
+        margin-left: 25px;
+    }
+    &__top-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    &__bottom-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        display: flex;
+    }
+    &__contact {
+        margin-left: 20px;
+    }
+}

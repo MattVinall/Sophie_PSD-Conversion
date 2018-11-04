@@ -1,0 +1,32 @@
+.nav {
+    background: $orange-shade;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    &__item--title {
+        font-size: 4.2rem;
+        font-family: $secondary__font;
+        padding: 0 35px;
+        text-transform: uppercase; 
+    }
+    &__link {
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 2rem;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:hover {
+            background:lighten($white-shade, 10); 
+            color: $primary-color;
+            transition: background 400ms ease-in-out;
+            border-radius: 10px;
+        }
+        &--active {
+            color: #fff;
+        }
+    }
+}
