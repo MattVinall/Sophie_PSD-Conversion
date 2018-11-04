@@ -5,9 +5,8 @@
     }
     &__container {
         width: 75%;
-        padding: 100px 0;
+        padding: 100px 0 200px 0;;
     }
-    //ABOUT P TAGS
     &__content {
         font-family: $primary__font;
         color: $primary-color;
@@ -41,18 +40,41 @@
     &__top-row {
         display: flex;
         align-items: center;
+        &__interests-image-container {
+            width: 50%;
+            &__interests-image {
+                box-shadow: -200px 20px $red-shade, 20px 20px $red-shade;
+                position: relative;
+                bottom: 75px;
+            }
+        }
     }
-    &__interests {
+     &__interests {
         margin-left: 10%;
-    }
-    &__interests-image-container {
-        position: relative;
-        bottom: 75px;
-        width: 50%;
-    }
+     }
+    
     &__interests-image {
         box-shadow: -200px 20px $red-shade, 20px 20px $red-shade;
-        margin: 50px 0;
+        position: relative;
+        bottom: 75px;
+    }
+
+    // SOPHIE'S TRAVELS
+    &__bottom-row {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+    &__travel-image-container {
+        width: 50%;
+    }
+    &__travel-image {
+        box-shadow: 200px 20px $orange-shade, 40px 40px $orange-shade;
+        position: relative;
+    }
+    &__travel {
+        margin-right: 10%;
+        text-align: right;
     }
 }
 
