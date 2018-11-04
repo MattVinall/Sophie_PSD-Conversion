@@ -1,0 +1,20 @@
+
+.journey {
+    background: $white-shade;
+    &__container {
+        padding: 100px 0;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__background-image {
+        max-width: 100%;
+    }
+
+    &__image {
+        box-shadow: 20px 20px $orange-shade;
+    }
+
+    &__content {
+        margin-left: 10%;
+    }
+}

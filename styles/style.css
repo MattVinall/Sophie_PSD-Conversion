@@ -149,8 +149,9 @@ html, body {
   font-size: 62.5%; }
 
 .wrapper {
-  max-width: 80%;
-  margin: 0 auto; }
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 80%; }
 
 .image {
   width: 100%;
@@ -169,7 +170,10 @@ html, body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 3px solid black; }
+  border: 3px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 1; }
   .nav__item--title {
     font-size: 4.2rem;
     font-family: "Lora", serif;
@@ -215,10 +219,10 @@ html, body {
     box-shadow: 15px 15px #fff;
     position: relative;
     top: 50px; }
-    .header__image__circle-text {
-      position: relative;
-      left: 100px;
-      bottom: 25px; }
+  .header__circle-text {
+    position: relative;
+    left: 125px;
+    bottom: 25px; }
 
 .about {
   background: #fff; }
@@ -354,7 +358,37 @@ html, body {
     display: -ms-flexbox;
     display: flex; }
   .links__contact {
-    margin-left: 20px; }
+    margin-left: 30px; }
+
+.journey {
+  background: #f0efed; }
+  .journey__container {
+    padding: 100px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+  .journey__background-image {
+    max-width: 100%; }
+  .journey__image {
+    -webkit-box-shadow: 20px 20px #f6a823;
+    box-shadow: 20px 20px #f6a823; }
+  .journey__content {
+    margin-left: 10%; }
+
+.gallery {
+  background: #fff;
+  padding: 100px 0; }
+  .gallery__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .gallery__cell {
+    margin: 0 20px; }
 
 .footer {
   background: #2c2c2c; }
