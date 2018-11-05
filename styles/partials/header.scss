@@ -1,5 +1,6 @@
 .header {
     background: $orange-shade;
+    background-attachment: fixed;
     margin: 0;
     &__header-content {
         display: flex;
@@ -13,7 +14,7 @@
         font-family: $secondary__font;
         text-transform: uppercase;
     }
-
+    
     &__image {
         box-shadow: 15px 15px #fff;
         position: relative;
@@ -27,7 +28,7 @@
      }
 }
 
-// BLOG HEADER 
+//BLOG HEADER
 .blog-header {
     background: url(../../assets/blog-image-1.jpg);
     height: 70vh;

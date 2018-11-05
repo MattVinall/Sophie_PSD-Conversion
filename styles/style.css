@@ -197,6 +197,7 @@ html, body {
 
 .header {
   background: #f6a823;
+  background-attachment: fixed;
   margin: 0; }
   .header__header-content {
     display: -webkit-box;
@@ -417,12 +418,44 @@ html, body {
 
 .blog {
   background: #f0efed; }
+  .blog__title {
+    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 5%; }
+  .blog__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .blog__container {
+    border-bottom: 5px solid #f6a823;
+    padding: 30px 0; }
+  .blog__main {
+    width: 70%;
+    padding: 100px 0;
+    margin-left: 5%; }
+  .blog__text {
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 25px 0;
+    margin: 0;
+    padding: 10px 0;
+    width: 90%;
+    margin-left: 5%; }
+    .blog__text--italic {
+      font-style: italic; }
 
 .aside {
   width: 30%;
   padding: 100px 0; }
   .aside__container {
     background: #fff;
+    width: 100%;
     margin: 25px auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -430,10 +463,7 @@ html, body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    flex-direction: column; }
     .aside__container--recent-posts {
       padding: 50px 0; }
   .aside__image-container {
@@ -456,7 +486,16 @@ html, body {
     margin: 0;
     margin: 0 0 0 15%; }
     .aside__sm-header--bottom {
-      padding-bottom: 25px; }
+      padding-bottom: 5%; }
+  .aside__link {
+    text-decoration: none; }
+    .aside__link--dark-blue {
+      color: #285e64;
+      font-weight: bold; }
+      .aside__link--dark-blue:hover {
+        color: #45a2ad; }
+  .aside__list {
+    list-style-type: none; }
   .aside__item {
     font-family: "Roboto", sans-serif;
     color: #2c2c2c;
@@ -465,4 +504,9 @@ html, body {
     padding: 25px 0;
     margin: 0;
     padding: 0;
-    margin-left: 15%; }
+    margin-left: 5%; }
+    .aside__item::before {
+      content: "\2022";
+      color: #f6a823;
+      font-weight: 700;
+      margin-right: 5%; }

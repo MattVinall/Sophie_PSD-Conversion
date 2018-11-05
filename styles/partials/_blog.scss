@@ -2,7 +2,32 @@
     @include heading(8rem);
     font-family: $secondary__font;
 }
-
 .blog {
     background: $white-shade;
+    &__title {
+        @include heading(2.4rem);
+        margin-left: 5%;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__container {
+        border-bottom: 5px solid $orange-shade;
+        padding: 30px 0;
+    }
+    &__main {
+        width: 70%;
+        padding: 100px 0;
+        margin-left: 5%;
+    }
+    &__text {
+        @include content;
+        padding: 10px 0;
+        width: 90%;
+        margin-left: 5%;
+        &--italic {
+            font-style: italic;
+        }
+    }
 }
+

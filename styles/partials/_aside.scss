@@ -3,10 +3,10 @@
     padding: 100px 0;
     &__container {
         background: #fff;
+        width: 100%;
         margin: 25px auto;
         display: flex;
         flex-direction:column;
-        justify-content: center;
         &--recent-posts {
             padding: 50px 0;
         }
@@ -23,13 +23,31 @@
         @include heading(2.4rem);
         margin: 0 0 0 15%;
         &--bottom {
-            padding-bottom: 25px;
+            padding-bottom: 5%;
         }
+    }
+    &__link {
+        text-decoration: none;
+        &--dark-blue {
+            color: $blue-shade;
+            font-weight: bold;
+            &:hover {
+                color: lighten($blue-shade, 20);
+            }
+        }
+    }
+    &__list {
+        list-style-type: none;
     }
     &__item {
         @include content;
         padding: 0;
-        margin-left: 15%;
+        margin-left: 5%;
+        &::before {
+            content: "\2022";
+            color: $orange-shade;
+            font-weight: 700;
+            margin-right: 5%;
+        }
      }
-
 }  
