@@ -14,6 +14,10 @@
     &__image-container {
         margin: 10% auto;
     }
+    &__image {
+        width: 100%;
+        padding: 0 25px;
+    }
     &__text {
         @include content;
         margin-left: 15%;

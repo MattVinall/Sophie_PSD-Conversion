@@ -44,12 +44,12 @@
     <main class="blog">
         <div class="blog__wrapper wrapper">
             <!-- ASIDE STARTS -->
-            <aside class="blog__container aside">
+            <aside class="aside">
 
                 <!-- ABOUT SOPHIE -->
                 <div class="aside__container aside__container--about">
                     <div class="aside__image-container">
-                        <img src="assets/blog-image-2.jpg" alt="Sophie covering her eyes two orange slices, dressed in an orange sweater and standing in front of a orange background.">
+                        <img src="assets/blog-image-2.jpg" class="aside__image" alt="Sophie covering her eyes two orange slices, dressed in an orange sweater and standing in front of a orange background.">
                     </div>
                     <h4 class="aside__sm-header">About Sophie</h4>
                     <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsa ut voluptatum <a href="#" class="aside__link aside__link--dark-blue">Find out more</a></p>
@@ -72,7 +72,8 @@
 
             <!-- BLOG -->
             <article class="blog__main">
-                <div class="blog__container aside__container">
+                <!-- MAIN BLOG POST -->
+                <div class="blog__container">
                     <h3 class="blog__title">Why I Became A Blogger</h3>
                     <p class="blog__text blog__text--italic">Monday October 8th, 2018 by <a href="#" class="blog__link blog__link--dark-blue">Sophie Barlow</a></p>
 
@@ -88,12 +89,33 @@
 
                     <p class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
                 </div>
-            </article>
+                
+                <!-- COMMENTS -->
+                <article class="blog__comments">
+                    <div class="blog__container blog__container--border blog__container--flex">
+                        <div class="blog__img-container">
+                            <img src="assets/blog-image-3.jpg" alt="">
+                        </div>
+                        <div class="blog__content">
+                            <p class="blog__text blog__text--italic"><a href="#" class="blog__link blog__link--dark-blue">Tuesday October 9th, 2018 by Jeremy</a></p>
+                            <p class="blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus minima molestiae nemo, deserunt enim blanditiis expedita, dignissimos vero explicabo facere? Soluta temporibus quis hic est voluptatibus architecto sequi debitis.</p>
+                        </div>
+                    </div>
+                </article>
 
-            <article>
-                <div class="blog__container"></div>
-            </article>
-        </div>
+                <!-- COMMENTS -->
+                <article class="blog__commments">
+                    <div class="blog__container blog__container--flex">
+                        <div class="blog__img-container">
+                            <img src="assets/blog-image-4.jpg" alt="">
+                        </div>
+                        <div class="blog__content">
+                            <p class="blog__text blog__text--italic"><a href="#" class="blog__link blog__link--dark-blue">Tuesday October 9th, 2018 by Jeremy</a></p>
+                            <p class="blog__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus minima molestiae nemo, deserunt enim blanditiis expedita, dignissimos vero explicabo facere? Soluta temporibus quis hic est voluptatibus architecto sequi debitis.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
     </main>
 
 </body>
