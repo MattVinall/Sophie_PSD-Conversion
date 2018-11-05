@@ -8,12 +8,7 @@
         padding: 100px 0 200px 0;;
     }
     &__content {
-        font-family: $primary__font;
-        color: $primary-color;
-        font-size: 20px;
-        line-height: 32px;
-        padding: 25px 0;
-        margin: 0;
+        @include content;
     }
     &__btn {
         background: $button-accent;

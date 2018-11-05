@@ -1,0 +1,8 @@
+.overlap-header {
+    @include heading(8rem);
+    font-family: $secondary__font;
+}
+
+.blog {
+    background: $white-shade;
+}

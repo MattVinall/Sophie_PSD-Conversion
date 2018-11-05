@@ -7,19 +7,30 @@
         justify-content: space-between;
     }
     &__main-heading {
-        margin: 0;
-        font-size: 9.2rem;
+        padding: 0 20% 0 0;
+        font-size: 15rem;
+        line-height: 92px;
         font-family: $secondary__font;
         text-transform: uppercase;
     }
+
     &__image {
         box-shadow: 15px 15px #fff;
         position: relative;
         top: 50px;
+        margin-right: 5%;
     }
     &__circle-text {
         position: relative;
-        left: 125px;
-        bottom: 25px;
+        left: -50px;
+        bottom: -25px;
      }
+}
+
+// BLOG HEADER 
+.blog-header {
+    background: url(../../assets/blog-image-1.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }

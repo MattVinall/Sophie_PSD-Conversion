@@ -1,0 +1,35 @@
+.aside {
+    width: 30%;
+    padding: 100px 0;
+    &__container {
+        background: #fff;
+        margin: 25px auto;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        &--recent-posts {
+            padding: 50px 0;
+        }
+    }    
+    &__image-container {
+        margin: 10% auto;
+    }
+    &__text {
+        @include content;
+        margin-left: 15%;
+        width: 80%;
+    }
+    &__sm-header {
+        @include heading(2.4rem);
+        margin: 0 0 0 15%;
+        &--bottom {
+            padding-bottom: 25px;
+        }
+    }
+    &__item {
+        @include content;
+        padding: 0;
+        margin-left: 15%;
+     }
+
+}  

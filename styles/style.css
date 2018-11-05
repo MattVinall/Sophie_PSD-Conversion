@@ -149,9 +149,8 @@ html, body {
   font-size: 62.5%; }
 
 .wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  max-width: 80%; }
+  max-width: 85%;
+  margin: 0 auto; }
 
 .image {
   width: 100%;
@@ -210,19 +209,27 @@ html, body {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .header__main-heading {
-    margin: 0;
-    font-size: 9.2rem;
+    padding: 0 20% 0 0;
+    font-size: 15rem;
+    line-height: 92px;
     font-family: "Lora", serif;
     text-transform: uppercase; }
   .header__image {
     -webkit-box-shadow: 15px 15px #fff;
     box-shadow: 15px 15px #fff;
     position: relative;
-    top: 50px; }
+    top: 50px;
+    margin-right: 5%; }
   .header__circle-text {
     position: relative;
-    left: 125px;
-    bottom: 25px; }
+    left: -50px;
+    bottom: -25px; }
+
+.blog-header {
+  background: url(../../assets/blog-image-1.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .about {
   background: #fff; }
@@ -398,3 +405,64 @@ html, body {
     text-align: center;
     padding: 25px 0;
     margin: 0; }
+
+.overlap-header {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Lora", serif; }
+
+.blog {
+  background: #f0efed; }
+
+.aside {
+  width: 30%;
+  padding: 100px 0; }
+  .aside__container {
+    background: #fff;
+    margin: 25px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .aside__container--recent-posts {
+      padding: 50px 0; }
+  .aside__image-container {
+    margin: 10% auto; }
+  .aside__text {
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 25px 0;
+    margin: 0;
+    margin-left: 15%;
+    width: 80%; }
+  .aside__sm-header {
+    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    margin: 0 0 0 15%; }
+    .aside__sm-header--bottom {
+      padding-bottom: 25px; }
+  .aside__item {
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 25px 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 15%; }
