@@ -20,12 +20,12 @@
     }
     &__text {
         @include content;
-        margin-left: 15%;
-        width: 80%;
+        margin-left: 10%;
+        width: 90%;
     }
     &__sm-header {
         @include heading(2.4rem);
-        margin: 0 0 0 15%;
+        margin: 0 0 0 10%;
         &--bottom {
             padding-bottom: 5%;
         }
@@ -42,6 +42,7 @@
     }
     &__list {
         list-style-type: none;
+        padding-left: 5%;
     }
     &__item {
         @include content;
@@ -68,12 +69,12 @@
     &__aside-container {
         background: #fff;
         width: 30%;
-        padding: 25px 0 25px 25px;
-        margin-top: 100px;
+        padding: 25px;
+        margin: 100px 0 50px 0;
         height: 35vh;
     }
      &__social {
-        width: 50%;
+        width: 60%;
         font-size: 2rem;
         color: $orange-shade;
         display: flex;
@@ -86,5 +87,35 @@
             font-weight: 700;
             padding-bottom: 10px;
         }
+    }
+}
+
+
+// MEDIA QUERIES
+
+//MEDIA QUERY FOR ASIDE (CONTACT PAGE)
+@media screen and (max-width: 1034px) {
+    .contact {
+        &__aside-container {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    &__aside-container {
+        margin-top: 0;
+        height: 40vh;
+        width: 100%;
+        text-align: center;
+
+    }
+    &__social {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    &__text {
+        padding: 5px 0;
     }
 }
