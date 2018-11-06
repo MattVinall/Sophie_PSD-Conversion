@@ -10,6 +10,8 @@
     width: 100%;
     z-index: 1;
     height: 10vh;
+    top:0;
+    left: 0;
     &__item--title {
         font-size: 4.2rem;
         font-family: $secondary__font;

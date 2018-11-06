@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    
     <!-- NAVIGATION STARTS -->
     <nav>
         <ul class="nav">
@@ -34,7 +35,38 @@
             </li>
         </ul>
     </nav>
+    <header class="contact-header"></header>
     <!-- NAVIGATION ENDS --> 
+    <div class="contact">
+        <div class="contact__contact-container wrapper">
+            <!-- FORM -->
+            <main class="contact__form-container">
+                <form action="" method="POST" class="contact__form form">
+                    <input type="text" id="name" class="form__user" 
+                        placeholder="Name">
+                    <input type="email" class="form__email" placeholder="Email address">
+
+                    <textarea name="comments" class="form__comments"  columns="30" rows="10" placeholder="Message"></textarea>
+ 
+                    <input type="submit" class="form__submit" value="Post Comment">
+                </form>
+            </main>
+            <aside class="contact__aside-container">
+                <div class="contact__social">
+                    <i class="contact__icon fab fa-facebook-f"></i>
+                    <i class="contact__icon fab fa-twitter"></i>
+                    <i class="contact__icon fab fa-linkedin-in"></i>
+                    <i class="contact__icon fab fa-instagram"></i>      
+                </div>
+                <p class="contact__text contact__text--bold">info@email.com</p>
+                <p class="contact__text">123 Queen Street West, Unit 10</p>
+                <p class="contact__text">Toronto, On.</p>
+                <p class="contact__text">M5V2Dg</p>
+            </aside>
+        </div>
+
+    </div>
+
 
 </body>
 </html>
