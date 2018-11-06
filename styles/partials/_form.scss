@@ -1,39 +1,10 @@
-.contact {
-    background: $white-shade;
-    &__contact-container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    &__aside-container {
-        background: #fff;
-        width: 30%;
-        padding: 50px;
-        margin-top: 100px;
-    }
-     &__social {
-        width: 60%;
-        margin-left:10%;
-        font-size: 2rem;
-        color: $orange-shade;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__text {
-        font-size: 1.6rem;
-        margin-left: 10%;
-        &--bold {
-            font-weight: 700;
-        }
-    }
-}
-
 .form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 2rem;
     padding: 100px 0;
+    margin-left: 25px;
     &__user {
         width: 49%;
         padding: 25px 50px;
@@ -51,4 +22,9 @@
         width: 100%;
         @extend .about__btn;
     }
+    &__blog {
+        margin-left: 0;
+        padding: 25px 0;
+    }
 }
+
