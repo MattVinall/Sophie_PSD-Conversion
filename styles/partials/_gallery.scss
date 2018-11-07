@@ -12,3 +12,24 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .gallery {
+        padding: 50px 0;
+    }
+    &__cell {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gallery {
+        &__container{
+            flex-direction: column;
+        }
+        &__cell {
+            margin: 10px 0;
+        }
+    }
+}

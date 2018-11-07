@@ -254,9 +254,8 @@ html, body {
   .header {
     background: url(../../assets/home-image-1.jpg);
     background-size: cover;
-    background-position: center; }
-  __image {
-    display: none; } }
+    background-position: center;
+    max-width: 100%; } }
 
 .about {
   background: #fff; }
@@ -366,6 +365,26 @@ html, body {
     text-align: center;
     margin: 50px 0; } }
 
+@media screen and (max-width: 750px) {
+  .about__container {
+    padding: 50px 0 100px 0; }
+  .about__interests-image {
+    width: 450px; }
+  .about__travel-image {
+    width: 450px; }
+  .about__travel-image-container {
+    width: 85%; } }
+
+@media screen and (max-width: 450px) {
+  .about__interests-image {
+    width: 350px; }
+  .about__travel-image {
+    width: 350px;
+    -webkit-box-shadow: 50px 20px #f6a823, 20px 20px #f6a823;
+    box-shadow: 50px 20px #f6a823, 20px 20px #f6a823; }
+  .about__travel-image-container {
+    width: 85%; } }
+
 .links {
   background: #f0efed;
   padding: 100px 0; }
@@ -417,6 +436,33 @@ html, body {
   .links__contact {
     margin-left: 30px; }
 
+@media screen and (max-width: 850px) {
+  .links {
+    padding: 50px 0; }
+    .links__top-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .links__bottom-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .links__content {
+      margin-left: 0;
+      width: 100%; }
+    .links__contact {
+      margin-left: 0; }
+    .links__text {
+      margin-left: 75px; } }
+
+@media screen and (max-width: 450px) {
+  .links__title {
+    margin-left: 5%; }
+  .links__text {
+    margin-left: 5%; } }
+
 .journey {
   background: #f0efed; }
   .journey__container {
@@ -461,6 +507,21 @@ html, body {
     margin: 0 20px; }
   .gallery__image {
     width: 100%; }
+
+@media screen and (max-width: 800px) {
+  .gallery {
+    padding: 50px 0; }
+  __cell {
+    margin: 0 5px; } }
+
+@media screen and (max-width: 600px) {
+  .gallery__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .gallery__cell {
+    margin: 10px 0; } }
 
 .footer {
   background: #2c2c2c; }
@@ -761,9 +822,11 @@ html, body {
     -ms-flex-pack: center;
     justify-content: center; }
   .form__user {
-    text-align: center; }
+    text-align: center;
+    font-size: 2rem; }
   .form__email {
-    text-align: center; } }
+    text-align: center;
+    font-size: 2rem; } }
 
 @media screen and (max-width: 700px) {
   .contact__contact-container {

@@ -44,3 +44,36 @@
         margin-left: 30px;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .links {
+        padding: 50px 0;
+        &__top-row {
+            flex-direction: column;
+        }
+        &__bottom-row {
+            flex-direction: column;
+        }
+        &__content {
+            margin-left: 0;
+            width: 100%;
+        }
+        &__contact {
+            margin-left: 0;
+        }
+        &__text {
+            margin-left: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .links {
+        &__title {
+            margin-left: 5%;
+        }
+        &__text {
+            margin-left: 5%;
+        }
+    }
+}

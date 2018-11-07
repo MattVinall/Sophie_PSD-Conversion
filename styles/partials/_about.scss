@@ -98,5 +98,38 @@
     }
 }
 
+@media screen and (max-width: 750px) {
+    .about {
+        &__container {
+            padding: 50px 0 100px 0;
+        }
+        &__interests-image {
+            width: 450px;
+        }
+        &__travel-image {
+            width: 450px;
+        }
+        &__travel-image-container {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about {
+        &__interests-image {
+            width: 350px;
+        }
+        &__travel-image {
+            width: 350px;
+            box-shadow: 50px 20px #f6a823, 20px 20px #f6a823;
+        }
+        &__travel-image-container {
+            width: 85%;
+        }
+
+    }
+}
+
 
 
