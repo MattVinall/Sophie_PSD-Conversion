@@ -35,4 +35,26 @@
             color: #fff;
         }
     }
+    &__burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav {
+        &__link {
+            display: none;
+        }
+        &__burger {
+            display: block;
+            font-size: 8rem;
+            position: absolute; right: 0;
+        }
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    &__item--title {
+        padding: 0;
+    }
 }

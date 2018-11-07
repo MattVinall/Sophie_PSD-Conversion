@@ -54,7 +54,9 @@ html, body{
 }
 
 @media screen and (max-width: 400px) {
-    max-width: 95%;
+    .wrapper {
+        max-width: 95%;
+    }   
 }
 
 

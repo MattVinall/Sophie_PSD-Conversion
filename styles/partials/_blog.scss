@@ -89,9 +89,12 @@
         &__image {
             border-radius: 50%;
         }
-        &__img-container {
-            margin: 0 auto;
-        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blog-heading {
+        font-size: 5rem;
     }
 }
 
