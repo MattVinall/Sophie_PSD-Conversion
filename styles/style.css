@@ -840,10 +840,12 @@ html, body {
   margin-left: 25px; }
   .form__user {
     width: 49%;
-    padding: 25px 50px; }
+    padding: 25px 50px;
+    font-size: 2rem; }
   .form__email {
     width: 49%;
-    padding: 25px 50px; }
+    padding: 25px 50px;
+    font-size: 2rem; }
   .form__comments {
     width: 100%;
     margin-top: 2%;
