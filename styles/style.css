@@ -758,7 +758,7 @@ html, body {
     width: 30%;
     padding: 25px;
     margin: 50px 0;
-    height: 30vh; }
+    height: 100%; }
   .contact__social {
     width: 60%;
     font-size: 2rem;
