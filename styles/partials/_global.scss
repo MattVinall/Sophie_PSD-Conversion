@@ -47,6 +47,16 @@ html, body{
     display: block;
 }
 
+@media screen and (max-width: 600px) {
+    .wrapper {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    max-width: 95%;
+}
+
 
 
 

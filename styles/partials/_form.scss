@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 2rem;
-    padding: 100px 0;
+    padding: 50px 0;
     margin-left: 25px;
     &__user {
         width: 49%;
@@ -54,7 +54,7 @@
     }
 }
 
-// MEDIA QUERY FOR CONTACT FORM MOBILE
+// MEDIA QUERY FOR CONTACT/BLOG FORM MOBILE
 @media screen and (max-width: 700px) {
     .contact {
         &__contact-container {
@@ -83,12 +83,13 @@
             padding: 5px 0;
         }
     }
-
+    
     .form {
         padding: 50px 0 25px 0;
     }
 }
 
+// MOBILE MEDIA QUERY
 @media screen and (max-width: 450px) {
     .form {
         &__user {

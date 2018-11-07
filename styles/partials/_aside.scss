@@ -58,7 +58,12 @@
 } 
 
 // CONTACT PAGE ASIDE
-
+.contact-heading {
+    @include heading(8rem);
+    font-family: $secondary__font;
+    position: relative;
+    top: -55px;
+}
 .contact {
     background: $white-shade;
     &__contact-container {
@@ -70,8 +75,8 @@
         background: #fff;
         width: 30%;
         padding: 25px;
-        margin: 100px 0 50px 0;
-        height: 35vh;
+        margin: 50px 0;
+        height: 30vh;
     }
      &__social {
         width: 60%;
@@ -93,29 +98,79 @@
 
 // MEDIA QUERIES
 
-//MEDIA QUERY FOR ASIDE (CONTACT PAGE)
+//MEDIA QUERY FOR ASIDE (contact and blog)
 @media screen and (max-width: 1034px) {
     .contact {
         &__aside-container {
             width: 40%;
         }
     }
+    .aside {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        &__wrapper {
+            display: flex;
+            margin: 0 25px;
+            flex-wrap: wrap;
+        }
+        &__container {
+            &--recent-posts {
+                width: 45%;
+            }
+            &--about {
+                width: 45%;
+            }
+        }
+        &__text {
+            margin:0;
+            width: 100%;
+        }
+        &__sm-header {
+            margin:0;
+        }
+        &__list {
+            padding-left: 0;
+        }
+        &__image {
+            display: none;
+        }
+    }
+
 }
 
 @media screen and (max-width: 700px) {
-    &__aside-container {
-        margin-top: 0;
-        height: 40vh;
-        width: 100%;
-        text-align: center;
-
+    .contact {
+        &__aside-container {
+            margin-top: 0;
+            width: 100%;
+            text-align: center;
+            
+        }
+        &__social {
+            width: 100%;
+            justify-content: space-around;
+            padding-top: 25px;
+        }
+        &__text {
+            padding: 5px 0;
+        }
     }
-    &__social {
-        width: 100%;
-        justify-content: space-around;
-    }
 
-    &__text {
-        padding: 5px 0;
+    .aside {
+        &__container {
+            &--recent-posts {
+                display: none;
+            }
+            &--about {
+                width: 100%;
+                margin: 0;
+            }
+        }
+        &__image {
+            display: block;
+            width: 300px;
+            height: 300px;
+        }
     }
 }
