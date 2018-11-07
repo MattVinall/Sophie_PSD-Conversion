@@ -69,9 +69,10 @@
 
 @media screen and (max-width: 450px) {
     .header {
+        height: 80vh;
         &__main-heading {
             font-size: 8rem;
-            margin-top: 45%;
+            margin-top: 60%;
         }
         &__circle-text {
             position: relative;

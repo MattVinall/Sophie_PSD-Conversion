@@ -220,6 +220,10 @@ html, body {
   __item--title {
     padding: 0; } }
 
+@media screen and (max-width: 450px) {
+  .nav__burger {
+    font-size: 5rem; } }
+
 .header {
   background: #f6a823;
   background-attachment: fixed;
@@ -282,12 +286,14 @@ html, body {
     height: 30vh; } }
 
 @media screen and (max-width: 450px) {
-  .header__main-heading {
-    font-size: 8rem;
-    margin-top: 45%; }
-  .header__circle-text {
-    position: relative;
-    bottom: -75px; } }
+  .header {
+    height: 80vh; }
+    .header__main-heading {
+      font-size: 8rem;
+      margin-top: 60%; }
+    .header__circle-text {
+      position: relative;
+      bottom: -75px; } }
 
 .about {
   background: #fff; }

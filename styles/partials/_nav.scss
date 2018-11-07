@@ -58,3 +58,11 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .nav {
+        &__burger {
+            font-size: 5rem;
+        }
+    }
+}
