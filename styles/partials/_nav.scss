@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 3px solid black;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -20,7 +19,7 @@
     }
     &__link {
         text-decoration: none;
-        padding: 10px 20px;
+        padding: 15px 30px;
         font-size: 2rem;
         color: $primary-color;
         text-transform: uppercase;
@@ -28,7 +27,7 @@
         &:hover {
             background:lighten($white-shade, 10); 
             color: $primary-color;
-            transition: background 400ms ease-in-out;
+            transition: 400ms ease-in-out;
             border-radius: 10px;
         }
         &--active {
@@ -44,25 +43,6 @@
     .nav {
         &__link {
             display: none;
-        }
-        &__burger {
-            display: block;
-            font-size: 8rem;
-            position: absolute; right: 0;
-        }
-    }
-    input[type="checkbox"] {
-        display: none;
-    }
-    &__item--title {
-        padding: 0;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .nav {
-        &__burger {
-            font-size: 5rem;
         }
     }
 }

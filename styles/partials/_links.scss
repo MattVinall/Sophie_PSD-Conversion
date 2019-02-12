@@ -48,6 +48,9 @@
 @media screen and (max-width: 850px) {
     .links {
         padding: 50px 0;
+        &__title {
+            justify-content: center;
+        }
         &__top-row {
             flex-direction: column;
         }
@@ -62,8 +65,9 @@
             margin-left: 0;
         }
         &__text {
-            margin-left: 75px;
+            text-align: center;
         }
+        
     }
 }
 

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Sophie</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -14,9 +16,6 @@
     <!-- NAVIGATION STARTS -->
     <nav>
         <ul class="nav">
-        <!-- HAMBURGER MENU -->
-        <label for="toggle" name="hamburberMenu" class="nav__burger">&#9776;</label>
-        <input type="checkbox" id="toggle" class="nav__burger">
             <li class="nav__item">
                 <a href="index.html" class="nav__link nav__link--active">Home</a>
             </li>
@@ -36,12 +35,27 @@
     </nav>
     <!-- NAVIGATION ENDS -->
 
+    <!-- MOBILE NAVIGATION -->
+    <nav class="nav-mobile">
+        <div class="hamburger">
+            <i class="fas fa-bars icon"></i>
+        </div>
+        <ul class="menu">
+            <li class="exit-responsive icon"><i class="fas fa-times"></i></li>
+            <li class="menu__item"><a href="#about">About</a></li>
+            <li class="menu__item"><a href="#skills">Skills</a></li>
+            <li class="menu__item"><a href="#work">Work</a></li>
+            <li class="menu__item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- MOBILE NAVIGATION ENDS -->
+
     <!-- HEADER STARTS -->
     <header class="header">
         <!-- HEADER CONTENT STARTS -->
         <div class="header__header-content wrapper">
             <h1 class="header__main-heading"><img src="assets/circle-text.png" alt="it's all about" class="header__circle-text">Sophie</h1>
-            <div class= "header__image-container">
+            <div class="header__image-container">
                 <img src="assets/home-image-1.jpg" class="header__image" alt="an image of Sophie, the blog creator, dressed in an orange sweater holding two slices of oranges in front of both her eyes standing in front of an orange background">
             </div>
             <!-- HEADER CONTENT ENDS -->
@@ -55,7 +69,10 @@
         <section class="about about--grey">
             <div class="about__container about__container wrapper">
                 <h2 class="about__section-header section-header">Who is Sophie?</h2>
-                <p class="about__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vel officiis perferendis sint, exercitationem molestiae laboriosam consequatur ducimus necessitatibus in iste quae. Omnis beatae cum numquam aspernatur? Libero id officia, nihil voluptates eius eveniet esse rerum dolorum laudantium sint placeat vel ab dicta at. Nam culpa reiciendis quia. Unde, eveniet.</p>
+                <p class="about__content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vel officiis
+                    perferendis sint, exercitationem molestiae laboriosam consequatur ducimus necessitatibus in iste
+                    quae. Omnis beatae cum numquam aspernatur? Libero id officia, nihil voluptates eius eveniet esse
+                    rerum dolorum laudantium sint placeat vel ab dicta at. Nam culpa reiciendis quia. Unde, eveniet.</p>
                 <a href="#" class="about__btn">Find Out More</a>
             </div>
 
@@ -67,7 +84,10 @@
                     </div>
                     <div class="about__interests">
                         <h3 class="about__sub-header">Sophie's Favorite Things</h3>
-                        <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non aliquam dolores? Adipisci, in dolore eligendi exercitationem natus velit reprehenderit, vitae quam quisquam voluptatibus ad, laudantium sint hic suscipit laboriosam consectetur illum itaque officia.</p>
+                        <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                            non aliquam dolores? Adipisci, in dolore eligendi exercitationem natus velit reprehenderit,
+                            vitae quam quisquam voluptatibus ad, laudantium sint hic suscipit laboriosam consectetur
+                            illum itaque officia.</p>
                         <a href="#" class="about__btn">Read More</a>
                     </div>
                 </div>
@@ -78,7 +98,10 @@
                     </div>
                     <div class="about__travel">
                         <h3 class="about__sub-header">Where's she travelled</h3>
-                        <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non aliquam dolores? Adipisci, in dolore eligendi exercitationem natus velit reprehenderit, vitae quam quisquam voluptatibus ad, laudantium sint hic suscipit laboriosam consectetur illum itaque officia.</p>
+                        <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                            non aliquam dolores? Adipisci, in dolore eligendi exercitationem natus velit reprehenderit,
+                            vitae quam quisquam voluptatibus ad, laudantium sint hic suscipit laboriosam consectetur
+                            illum itaque officia.</p>
                         <a href="#" class="about__btn">Read More</a>
                     </div>
                 </div>
@@ -99,7 +122,9 @@
                             <h4 class="links__sm-header">Photos</h4>
                         </div>
                         <div class="links__content">
-                            <p class="links__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo eaque illum repellat quaerat quam ut iste repudiandae accusantium molestiae magni tempora porro perspiciatis, quae velit.</p>
+                            <p class="links__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+                                eaque illum repellat quaerat quam ut iste repudiandae accusantium molestiae magni
+                                tempora porro perspiciatis, quae velit.</p>
                         </div>
                     </div>
 
@@ -110,7 +135,9 @@
                             <h4 class="links__sm-header">About</h4>
                         </div>
                         <div class="links__content">
-                            <p class="links__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero dolorem placeat asperiores natus facilis ad aperiam possimus, quos quaerat unde. Exercitationem labore fugiat dicta?</p>
+                            <p class="links__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                                libero dolorem placeat asperiores natus facilis ad aperiam possimus, quos quaerat unde.
+                                Exercitationem labore fugiat dicta?</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +151,9 @@
                             <h4 class="links__sm-header">Blog</h4>
                         </div>
                         <div class="links__content">
-                            <p class="links__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi harum magni rem aut perspiciatis ipsum obcaecati, eum earum eveniet dolores numquam, quod, odio in non?</p>
+                            <p class="links__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi harum
+                                magni rem aut perspiciatis ipsum obcaecati, eum earum eveniet dolores numquam, quod,
+                                odio in non?</p>
                         </div>
                     </div>
 
@@ -135,7 +164,9 @@
                             <h4 class="links__sm-header">Get in Touch</h4>
                         </div>
                         <div class="links__content">
-                             <p class="links__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nulla esse dignissimos libero aliquid necessitatibus reiciendis harum, sint id vero eum sed voluptatem, laudantium quasi?</p>
+                            <p class="links__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi nulla
+                                esse dignissimos libero aliquid necessitatibus reiciendis harum, sint id vero eum sed
+                                voluptatem, laudantium quasi?</p>
                         </div>
                     </div>
                 </div>
@@ -143,7 +174,7 @@
         </section>
         <!-- LINKS SECTION ENDS -->
 
-        <!-- JOURNEY SECTION STARTS --> 
+        <!-- JOURNEY SECTION STARTS -->
         <section class="journey">
             <div class="journey__background">
                 <img src="assets/home-image-4.jpg" class="journey__background-image" alt="a close up landscape image of 2 rows of bright orange seats at a staduim with blue panels on the sides of the seats">
@@ -155,7 +186,11 @@
                 </div>
                 <div class="journey__content">
                     <h2 class="about__section-header">Sophie's Journey</h2>
-                    <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consectetur illum eius aliquid nesciunt, quidem exercitationem vel ut ratione. Blanditiis voluptas ea consectetur facere unde corrupti sit ad itaque cumque libero nemo autem voluptate ipsum enim, in fugit illo et provident iure a qui delectus! Accusamus, fuga rerum. Rerum, saepe.</p>
+                    <p class="about__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+                        consectetur illum eius aliquid nesciunt, quidem exercitationem vel ut ratione. Blanditiis
+                        voluptas ea consectetur facere unde corrupti sit ad itaque cumque libero nemo autem voluptate
+                        ipsum enim, in fugit illo et provident iure a qui delectus! Accusamus, fuga rerum. Rerum,
+                        saepe.</p>
                     <a href="#" class="about__btn">Find Out More</a>
                 </div>
             </div>
@@ -165,7 +200,7 @@
         <!-- GALLERY STARTS -->
         <section class="gallery">
             <div class="gallery__container wrapper">
-                <div class= "gallery__cell">
+                <div class="gallery__cell">
                     <img src="assets/home-image-6.jpg" class="gallery__image" alt="a photograph of a bicycle with a teal frame, white spokes and handle bars with a basket in the front to hold some items parked in front of a bright orange wall">
                 </div>
                 <div class="gallery__cell">
@@ -173,7 +208,7 @@
                 </div>
                 <div class="gallery__cell">
                     <img src="assets/home-image-8.jpg" class="gallery__image" alt="a close up image looking up and the top of an orange beach umbrella with the text 'banana beach'">
-                </div>   
+                </div>
             </div>
         </section>
         <!-- GALLERY ENDS -->
@@ -184,4 +219,5 @@
         <p class="footer__text">Copyright &copy; HackerYou</p>
     </footer>
 </body>
+
 </html>

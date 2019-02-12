@@ -23,8 +23,8 @@
     }
     &__circle-text {
         position: relative;
-        left: -50px;
-        bottom: -25px;
+        left: 130px;
+        bottom: 50px;
      }
 }
 
@@ -53,12 +53,17 @@
         background-size: cover;
         background-position: center;
         height: 50vh;
+        position: relative;
         &__main-heading {
             font-size: 10rem;
-            margin-top: 40%;
-            margin-left: 10%; 
+            position: absolute;
+            bottom: 0;
+            text-align: center;
         }
         &__image {
+            display: none;
+        }
+        &__circle-text {
             display: none;
         }
     }
@@ -69,14 +74,9 @@
 
 @media screen and (max-width: 450px) {
     .header {
-        height: 80vh;
         &__main-heading {
             font-size: 8rem;
             margin-top: 60%;
-        }
-        &__circle-text {
-            position: relative;
-            bottom: -75px;
         }
     }
 }
