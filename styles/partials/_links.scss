@@ -31,7 +31,6 @@
     &__top-row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
     }
     &__bottom-row {
         display: flex;
@@ -48,9 +47,6 @@
 @media screen and (max-width: 850px) {
     .links {
         padding: 50px 0;
-        &__title {
-            justify-content: center;
-        }
         &__top-row {
             flex-direction: column;
         }
@@ -64,10 +60,6 @@
         &__contact {
             margin-left: 0;
         }
-        &__text {
-            text-align: center;
-        }
-        
     }
 }
 
