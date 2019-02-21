@@ -1,175 +1,186 @@
 .aside {
-    width: 30%;
-    padding: 100px 0;
-    &__container {
-        background: #fff;
-        width: 100%;
-        margin: 25px auto;
-        display: flex;
-        flex-direction:column;
-        &--recent-posts {
-            padding: 50px 0;
-        }
-    }    
-    &__image-container {
-        margin: 10% auto;
-    }
-    &__image {
-        width: 100%;
-        padding: 0 25px;
-    }
-    &__text {
-        @include content;
-        margin-left: 10%;
-        width: 90%;
-    }
-    &__sm-header {
-        @include heading(2.4rem);
-        margin: 0 0 0 10%;
-        &--bottom {
-            padding-bottom: 5%;
-        }
-    }
-    &__link {
-        text-decoration: none;
-        &--dark-blue {
-            color: $blue-shade;
-            font-weight: bold;
-            &:hover {
-                color: lighten($blue-shade, 20);
-            }
-        }
-    }
-    &__list {
-        list-style-type: none;
-        padding-left: 5%;
-    }
-    &__item {
-        @include content;
-        padding: 0;
-        margin-left: 5%;
-        &::before {
-            content: "\2022";
-            color: $orange-shade;
-            font-weight: 700;
-            margin-right: 5%;
-        }
-     }
-} 
+	width: 30%;
+	padding: 100px 0;
+	&__container {
+		background: #fff;
+		width: 100%;
+		margin: 25px auto;
+		display: flex;
+		flex-direction: column;
+		&--recent-posts {
+			padding: 50px 0;
+		}
+	}
+	&__image-container {
+		margin: 10% auto;
+	}
+	&__image {
+		width: 100%;
+		padding: 0 25px;
+	}
+	&__text {
+		@include content;
+		margin-left: 10%;
+		width: 90%;
+	}
+	&__sm-header {
+		@include heading(2.4rem);
+		margin: 0 0 0 10%;
+		&--bottom {
+			padding-bottom: 5%;
+		}
+	}
+	&__link {
+		text-decoration: none;
+		&--dark-blue {
+			color: $blue-shade;
+			font-weight: bold;
+			&:hover {
+				color: lighten($blue-shade, 20);
+			}
+		}
+	}
+	&__list {
+		list-style-type: none;
+		padding-left: 5%;
+	}
+	&__item {
+		@include content;
+		padding: 0;
+		margin-left: 5%;
+		&::before {
+			content: "\2022";
+			color: $orange-shade;
+			font-weight: 700;
+			margin-right: 5%;
+		}
+	}
+}
 
 // CONTACT PAGE ASIDE
 .contact-heading {
-    @include heading(8rem);
-    font-family: $secondary__font;
-    position: relative;
-    top: -55px;
+	@include heading(8rem);
+	font-family: $secondary__font;
+	position: relative;
+	top: -55px;
 }
 .contact {
-    background: $white-shade;
-    &__contact-container {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    &__aside-container {
-        background: #fff;
-        width: 30%;
-        padding: 25px;
-        margin: 50px 0;
-        height: 100%;
-    }
-     &__social {
-        width: 60%;
-        font-size: 2rem;
-        color: $orange-shade;
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 10px;
-    }
-    &__text {
-        font-size: 1.6rem;
-        &--bold {
-            font-weight: 700;
-            padding-bottom: 10px;
-        }
-    }
+	background: $white-shade;
+	&__contact-container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	&__aside-container {
+		background: #fff;
+		width: 30%;
+		padding: 25px;
+		margin: 50px 0;
+		height: 100%;
+	}
+	&__social {
+		width: 60%;
+		font-size: 2rem;
+		color: $orange-shade;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 10px;
+		i:hover {
+			color: $primary-color;
+			transform: scale(1.3);
+			transition: 300ms ease-in;
+		}
+	}
+	&__text {
+		font-size: 1.6rem;
+		&--bold {
+			font-weight: 700;
+			padding-bottom: 10px;
+		}
+	}
 }
-
 
 // MEDIA QUERIES
 
 //MEDIA QUERY FOR ASIDE (contact and blog)
 @media screen and (max-width: 1034px) {
-    .contact {
-        &__aside-container {
-            width: 40%;
-        }
-    }
-    .aside {
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        &__wrapper {
-            display: flex;
-            margin: 0 25px;
-            flex-wrap: wrap;
-        }
-        &__container {
-            &--recent-posts {
-                width: 45%;
-            }
-            &--about {
-                width: 45%;
-            }
-        }
-        &__text {
-            margin:0;
-            width: 100%;
-        }
-        &__sm-header {
-            margin:0;
-        }
-        &__list {
-            padding-left: 0;
-        }
-        &__image {
-            display: none;
-        }
-    }
-
+	.contact {
+		&__aside-container {
+			width: 45%;
+		}
+	}
+	.aside {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		&__wrapper {
+			display: flex;
+			margin: 0 25px;
+			flex-wrap: wrap;
+		}
+		&__container {
+			&--recent-posts {
+				width: 45%;
+			}
+			&--about {
+				width: 45%;
+			}
+		}
+		&__text {
+			margin: 0;
+			width: 100%;
+		}
+		&__sm-header {
+			margin: 0;
+		}
+		&__list {
+			padding-left: 0;
+		}
+		&__image {
+			display: none;
+		}
+	}
 }
 
 @media screen and (max-width: 700px) {
-    .contact {
-        &__aside-container {
-            margin-top: 0;
-            width: 100%;
-            height: 500px;
-            text-align: center;
-        }
-        &__social {
-            padding-top: 25px;
-        }
-        &__text {
-            padding: 5px 0;
-        }
-    }
+	.contact {
+		&__aside-container {
+			margin-top: 0;
+			width: 100%;
+			height: 500px;
+			text-align: center;
+		}
+		&__social {
+			padding-top: 25px;
+		}
+		&__text {
+			padding: 5px 0;
+		}
+	}
 
-    .aside {
-        &__container {
-            &--recent-posts {
-                display: block;
-                width: 100%;
-            }
-            &--about {
-                width: 100%;
-                margin: 0;
-            }
-        }
-        &__image {
-            display: block;
-            width: 300px;
-            height: 300px;
-        }
-    }
+	.aside {
+		&__container {
+			&--recent-posts {
+				display: block;
+				width: 100%;
+			}
+			&--about {
+				width: 100%;
+				margin: 0;
+			}
+		}
+		&__image {
+			display: block;
+			width: 300px;
+			height: 300px;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact-heading {
+		font-size: 6rem;
+		top: -45px;
+		text-align: center;
+	}
 }

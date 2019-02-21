@@ -16,6 +16,7 @@
 		font-weight: 500;
 		flex: 1 0 auto;
 		text-align: center;
+		font-weight: bold;
 		&--checkbox {
 			display: none;
 			i {
@@ -125,7 +126,7 @@ input[type="checkbox"]:checked ~ .navbar__mobile {
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: space-between;
-			min-width: 80%;
+			min-width: 95%;
 			margin: 0 auto;
 			align-items: center;
 		}
@@ -135,10 +136,17 @@ input[type="checkbox"]:checked ~ .navbar__mobile {
 				display: block;
 				padding: 0;
 				flex: 0 0 auto;
+				float: left;
 			}
 			&--checkbox {
 				display: block;
 			}
 		}
+	}
+}
+
+@media (max-width: 470px) {
+	.navbar__mobile {
+		width: 100%;
 	}
 }
