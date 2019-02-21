@@ -1,84 +1,87 @@
 .header {
-    background: $orange-shade;
-    background-attachment: fixed;
-    margin: 0;
-    &__header-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__main-heading {
-        padding: 0 5% 0 0;
-        font-size: 13rem;
-        line-height: 92px;
-        font-family: $secondary__font;
-        text-transform: uppercase;
-    }
-    &__image {
-        box-shadow: 15px 15px #fff;
-        position: relative;
-        top: 50px;
-        margin-right: 5%;
-        width: 100%;
-    }
-    &__circle-text {
-        position: relative;
-        left: 130px;
-        bottom: 50px;
-     }
+	background: $orange-shade;
+	background-attachment: fixed;
+	margin: 0;
+	&__header-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__main-heading {
+		padding: 0 5% 0 0;
+		font-size: 13rem;
+		line-height: 92px;
+		font-family: $secondary__font;
+		text-transform: uppercase;
+	}
+	&__image {
+		box-shadow: 15px 15px #fff;
+		position: relative;
+		top: 50px;
+		margin-right: 5%;
+		width: 100%;
+	}
+	&__circle-text {
+		position: relative;
+		left: 130px;
+		bottom: 50px;
+	}
 }
 
 //BLOG HEADER
 .blog-header {
-    background: url(../assets/blog-image-1.jpg);
-    height: 50vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background: url(../assets/blog-image-1.jpg);
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 //CONTACT HEADER
 
 .contact-header {
-    background: url(../assets/contact-image-1.jpg);
-    height: 40vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+	background: url(../assets/contact-image-1.jpg);
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 @media screen and (max-width: 850px) {
-    .header {
-        background: url(../assets/home-image-1.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        position: relative;
-        &__main-heading {
-            font-size: 10rem;
-            position: absolute;
-            bottom: 0;
-            text-align: center;
-        }
-        &__image {
-            display: none;
-        }
-        &__circle-text {
-            display: none;
-        }
-    }
-    .blog-header {
-        height: 30vh;
-    }
+	.header {
+		background: url(../assets/home-image-1.jpg);
+		background-size: cover;
+		background-position: center;
+		height: 70vh;
+		position: relative;
+		&__main-heading {
+			font-size: 10rem;
+			position: absolute;
+			bottom: 0;
+			text-align: center;
+		}
+		&__image {
+			display: none;
+		}
+		&__circle-text {
+			display: none;
+		}
+	}
+	.blog-header {
+		height: 70vh;
+		background-position-x: -1300px;
+	}
 }
 
 @media screen and (max-width: 450px) {
-    .header {
-        &__main-heading {
-            font-size: 8rem;
-            margin-top: 60%;
-        }
-    }
+	.header {
+		&__main-heading {
+			font-size: 8rem;
+			margin-top: 60%;
+		}
+	}
+	.blog-header {
+		height: 70vh;
+		background-position-x: -1400px;
+	}
 }
-
-
