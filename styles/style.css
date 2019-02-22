@@ -358,8 +358,8 @@ input[type="checkbox"]:checked ~ .navbar__mobile {
     width: 100%; }
   .header__circle-text {
     position: relative;
-    left: 130px;
-    bottom: 50px; }
+    left: 150px;
+    top: -50px; }
 
 .blog-header {
   background: url(../assets/blog-image-1.jpg);
@@ -370,23 +370,32 @@ input[type="checkbox"]:checked ~ .navbar__mobile {
 
 .contact-header {
   background: url(../assets/contact-image-1.jpg);
-  height: 70vh;
+  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+@media screen and (max-width: 1580px) {
+  .header__circle-text {
+    position: relative;
+    left: -50px;
+    top: 25px; } }
 
 @media screen and (max-width: 850px) {
   .header {
     background: url(../assets/home-image-1.jpg);
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 80vh;
     position: relative; }
     .header__main-heading {
       font-size: 10rem;
       position: absolute;
       bottom: 0;
-      text-align: center; }
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding-right: 0; }
     .header__image {
       display: none; }
     .header__circle-text {
